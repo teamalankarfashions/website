@@ -7,7 +7,8 @@
 <meta name="description" content="Alankar Fashions, Mangalwar Peth, Kolhapur. Handcrafted artificial jewellery: Kolhapuri Saj, Thushi, Chinchpeti, Tanmani, Kundan, AD necklaces, bangles and earrings. COD and free shipping across India.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://zgivysdzzsslbdltranb.supabase.co">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/teamalankarfashions/website@f66508ec1764e184463a987b78db0f93007b2446/public/brand/logo-original.jpg">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Rozha+One&family=Tiro+Devanagari+Marathi&family=Hanken+Grotesk:wght@400;500;600&display=swap">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"JewelryStore","name":"Alankar Fashions","alternateName":"अलंकार","url":"https://alankarfashions.com","telephone":"+91-96570-93006","email":"hello@alankarfashions.com","address":{"@type":"PostalAddress","streetAddress":"Shop No 1, 1354 B Ward, near Khari Corner, Mangalwar Peth","addressLocality":"Kolhapur","addressRegion":"Maharashtra","postalCode":"416012","addressCountry":"IN"},"sameAs":["https://www.instagram.com/alankar_fashions_kop/","https://www.facebook.com/AlankarFashion/"],"paymentAccepted":"Cash on Delivery, UPI, Cards (Razorpay)"}
@@ -73,7 +74,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--pearl) 92%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
 header.site.scrolled{border-bottom-color:var(--line)}
 .hdr{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:76px;gap:16px}
-.brand{display:flex;align-items:center;gap:12px;justify-self:center;grid-column:2}
+.brand{display:block;justify-self:center;grid-column:2}
+.brand img{height:58px;width:auto}
 .brand .mark{width:44px;height:44px;border-radius:50%;border:1px solid var(--zari);display:grid;place-items:center;font:22px/1 var(--f-deva);color:var(--sindoor)}
 .brand .word{display:flex;flex-direction:column;line-height:1}
 .brand .word b{font:400 30px/1 var(--f-deva);color:var(--sindoor);font-weight:400}
@@ -103,8 +105,7 @@ nav.main > div:hover .mega,nav.main > div:focus-within .mega{opacity:1;visibilit
   .hdr{grid-template-columns:auto 1fr auto;min-height:64px}
   .brand{grid-column:2;justify-self:center}
   .burger{grid-column:1;grid-row:1}
-  .brand .word b{font-size:26px}
-  .brand .mark{display:none}
+  .brand img{height:46px}
   .tools .hide-sm{display:none}
 }
 
@@ -121,7 +122,7 @@ nav.main > div:hover .mega,nav.main > div:focus-within .mega{opacity:1;visibilit
 .hero .btn-red:hover{background:var(--zari-soft)}
 .hero .btn-ghost{color:var(--pearl)}
 .hero-media{position:relative;min-height:420px}
-.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:kenburns 18s var(--ease) both}
+.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 25%;animation:kenburns 18s var(--ease) both}
 .hero-media::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--kumkum) 0%,transparent 35%)}
 @keyframes kenburns{from{transform:scale(1.12)}to{transform:scale(1)}}
 .thread{position:absolute;inset:0;z-index:1;pointer-events:none}
@@ -185,7 +186,7 @@ section{padding-block:clamp(64px,9vw,120px)}
 /* ---------- marquee ---------- */
 .marq{background:var(--kumkum);color:var(--zari-soft);overflow:hidden;padding-block:22px;white-space:nowrap}
 .marq .track{display:inline-flex;gap:48px;animation:marq 38s linear infinite;font:28px/1 var(--f-marathi)}
-.marq .track span::after{content:"✦";font-size:14px;margin-left:48px;color:var(--zari);vertical-align:middle}
+.marq .track span::after{content:"•";font-size:18px;margin-left:48px;color:var(--zari);vertical-align:middle}
 @keyframes marq{to{transform:translateX(-50%)}}
 
 /* ---------- heritage ---------- */
@@ -374,10 +375,7 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
   <div class="wrap hdr">
     <button class="burger" aria-label="Open menu" id="openMenu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 7h18M3 12h18M3 17h12"/></svg></button>
     <nav class="main" aria-label="Main" id="mainNav"></nav>
-    <a class="brand" href="#" aria-label="Alankar Fashions home">
-      <span class="mark" aria-hidden="true">अ</span>
-      <span class="word"><b>अलंकार</b><small>FASHIONS</small></span>
-    </a>
+    <a class="brand" href="#" aria-label="Alankar Fashions home"><img src="https://cdn.jsdelivr.net/gh/teamalankarfashions/website@f66508ec1764e184463a987b78db0f93007b2446/public/brand/logo-red.png" alt="अलंकार Alankar Fashions" width="806" height="315"></a>
     <div class="tools">
       <button aria-label="Search" class="hide-sm"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></button>
       <a href="#" aria-label="Account" class="hide-sm"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></a>
@@ -393,22 +391,15 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
     <div class="hero-grid">
       <div class="hero-copy">
         <span class="tag">स्त्रीचे सौंदर्य खुलवणारे</span>
-        <h1>The Kolhapuri Saj, <em>made to be inherited.</em></h1>
-        <p class="lede">Traditional Maharashtrian jewellery, hand-finished at our Mangalwar Peth shop. Saj, Thushi, Chinchpeti and bridal sets that look like heirlooms and cost like gifts.</p>
+        <h1>Traditional Kolhapuri jewellery, delivered across India.</h1>
+        <p class="lede">Saj, Thushi, Chinchpeti, Kundan and bridal sets from our shop in Mangalwar Peth, Kolhapur. Pay on delivery, or online.</p>
         <div class="ctas">
           <a class="btn btn-red" href="#traditionals">Shop Traditionals <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a class="btn btn-ghost" href="#bridal">The Bridal Edit</a>
         </div>
       </div>
       <div class="hero-media">
-        <img src="https://zgivysdzzsslbdltranb.supabase.co/storage/v1/object/public/site-assets/figma/hero-saj.webp" alt="Gold Kolhapuri Saj necklace draped on crimson silk beside a lit diya" fetchpriority="high">
-        <svg class="thread" viewBox="0 0 1000 700" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M-20 120 C 180 120, 220 520, 470 560 S 820 380, 1020 140"/>
-          <circle cx="470" cy="560" r="5"/>
-        </svg>
-        <div class="hero-chip">
-          <div><b>Kolhapuri Saj · 21-pendant</b><small>From ₹1,850 · COD available</small></div>
-        </div>
+        <img src="https://images.unsplash.com/photo-1673413521612-46ecc8a3daf0?auto=format&fit=crop&w=1800&q=80" alt="Maharashtrian bride wearing traditional gold jewellery and nath" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -430,7 +421,7 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
   <section aria-labelledby="cat-h">
     <div class="wrap">
       <div class="shead rv">
-        <div class="l"><span class="eyebrow">Shop by collection</span><h2 id="cat-h">Five collections, one Kolhapur.</h2></div>
+        <div class="l"><h2 id="cat-h">Shop by collection</h2></div>
         <a class="link-u" href="#">View all jewellery</a>
       </div>
       <div class="cats" id="cats"></div>
@@ -443,12 +434,11 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
   <section class="heritage" id="traditionals" aria-labelledby="her-h">
     <div class="wrap grid">
       <figure class="rv">
-        <img src="https://zgivysdzzsslbdltranb.supabase.co/storage/v1/object/public/site-assets/figma/craft-hands.webp" alt="Artisan finishing a gold Kolhapuri Saj necklace at a workbench" loading="lazy">
-        <figcaption>Finishing a Saj, bead by bead</figcaption>
+        <img src="https://images.unsplash.com/photo-1673413349218-ba4de23c2958?auto=format&fit=crop&w=1200&q=80" alt="Woman in a Paithani saree wearing traditional Maharashtrian gold jewellery" loading="lazy">
       </figure>
       <div class="txt rv">
         <span class="eyebrow">The Traditionals</span>
-        <h2 id="her-h">What makes a Kolhapuri Saj a Saj?</h2>
+        <h2 id="her-h">What is a Kolhapuri Saj?</h2>
         <p>A Kolhapuri Saj is a Maharashtrian necklace strung with small gold-tone pendants, traditionally 21, each shaped after a symbol of prosperity. It is worn by brides and at every festival that matters, and it is the piece Kolhapur is known for across India.</p>
         <p>Our Traditionals collection keeps these forms honest: proportions, bead counts and the dark red thread, finished by hand so the piece sits right on a Nauvari or a Paithani.</p>
         <div class="glossary">
@@ -466,7 +456,7 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
   <section style="padding-top:0" aria-labelledby="best-h">
     <div class="wrap">
       <div class="shead rv">
-        <div class="l"><span class="eyebrow">Most loved</span><h2 id="best-h">Pieces Kolhapur keeps coming back for.</h2></div>
+        <div class="l"><h2 id="best-h">Bestsellers</h2></div>
         <div class="tabs" role="tablist" id="tabs">
           <button role="tab" aria-selected="true" data-f="all">Bestsellers</button>
           <button role="tab" aria-selected="false" data-f="new">New in</button>
@@ -479,7 +469,7 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
 
   <!-- BRIDAL -->
   <section class="bridal" id="bridal" aria-labelledby="bri-h">
-    <img src="https://zgivysdzzsslbdltranb.supabase.co/storage/v1/object/public/site-assets/figma/banner-bridal.webp" alt="Complete Maharashtrian bridal jewellery set on a red and green Paithani saree" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1781187009755-0cbc0c4cd2b3?auto=format&fit=crop&w=2000&q=80" alt="Bride in traditional attire wearing gold bridal jewellery" loading="lazy" style="object-position:center 30%">
     <div class="ov"></div>
     <div class="in"><div class="wrap" style="width:100%">
       <div class="box rv">
@@ -497,7 +487,7 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
   <!-- OCCASIONS / PRICE -->
   <section aria-labelledby="occ-h">
     <div class="wrap">
-      <div class="shead rv"><div class="l"><span class="eyebrow">Shop by budget &amp; occasion</span><h2 id="occ-h">Find it faster.</h2></div></div>
+      <div class="shead rv"><div class="l"><h2 id="occ-h">Shop by budget &amp; occasion</h2></div></div>
       <div class="occ rv">
         <a href="#"><b>₹499</b><span>Under</span></a>
         <a href="#"><b>₹999</b><span>Under</span></a>
@@ -512,18 +502,13 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
   <!-- CRAFT VIDEO -->
   <section class="craft" aria-labelledby="craft-h">
     <div class="vid">
-      <img class="poster" src="https://zgivysdzzsslbdltranb.supabase.co/storage/v1/object/public/site-assets/figma/craft-hands.webp" alt="" aria-hidden="true">
+      <img class="poster" src="https://images.unsplash.com/photo-1751606615009-30f61ff1a510?auto=format&fit=crop&w=1800&q=80" alt="" aria-hidden="true">
       <iframe src="https://player.vimeo.com/video/1209327159?background=1&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;dnt=1" title="Alankar jewellery being worn" allow="autoplay; fullscreen" loading="lazy"></iframe>
       <div class="ov"></div>
       <div class="in"><div class="wrap"><div>
         <span class="eyebrow">Crafted in Kolhapur</span>
-        <h2 id="craft-h">Worn at weddings. <br>Made on Mangalwar Peth.</h2>
+        <h2 id="craft-h">From our shop in Mangalwar Peth</h2>
         <p>Every piece leaves our shop checked by hand, packed in a gift box, and ready to wear the day it arrives.</p>
-        <div class="stats">
-          <div><b>500+</b><span>Designs</span></div>
-          <div><b>5</b><span>Collections</span></div>
-          <div><b>All India</b><span>Delivery</span></div>
-        </div>
       </div></div></div>
     </div>
   </section>
@@ -532,10 +517,10 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
   <section class="gift" aria-labelledby="gift-h">
     <div class="wrap">
       <div class="grid rv">
-        <img src="https://zgivysdzzsslbdltranb.supabase.co/storage/v1/object/public/site-assets/figma/banner-gifting.webp" alt="Red velvet jewellery gift box with a diamond pendant beside a diya and marigolds" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1707149974686-0c198fdebd51?auto=format&fit=crop&w=1400&q=80" alt="Smiling woman wearing a stone choker and matching earrings" loading="lazy">
         <div class="txt">
-          <span class="eyebrow">Gifting</span>
-          <h2 id="gift-h">A gift she'll actually wear.</h2>
+          <span class="eyebrow">For weddings, Diwali &amp; birthdays</span>
+          <h2 id="gift-h">Gifting</h2>
           <p>Every order ships in our signature red box. Add a handwritten note at checkout.</p>
           <ul>
             <li>Gift box and note card free on every order</li>
@@ -552,7 +537,7 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
   <section class="insta" style="padding-top:0" aria-labelledby="ig-h">
     <div class="wrap">
       <div class="shead rv">
-        <div class="l"><span class="eyebrow">@alankar_fashions_kop</span><h2 id="ig-h">Seen on Instagram</h2></div>
+        <div class="l"><span class="eyebrow">@alankar_fashions_kop</span><h2 id="ig-h">Follow us on Instagram</h2></div>
         <a class="link-u" href="https://www.instagram.com/alankar_fashions_kop/" target="_blank" rel="noopener">Follow us</a>
       </div>
       <div class="grid" id="ig"></div>
@@ -563,8 +548,8 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
   <section class="visit" style="padding-top:0" aria-labelledby="faq-h">
     <div class="wrap grid">
       <div class="store rv">
-        <span class="eyebrow" style="color:var(--zari-soft)">Visit the shop</span>
-        <h2 style="font-size:clamp(28px,3.4vw,42px)">Try it on in Kolhapur.</h2>
+        <span class="eyebrow" style="color:var(--zari-soft)">Kolhapur</span>
+        <h2 style="font-size:clamp(28px,3.4vw,42px)">Visit our shop</h2>
         <address>Shop No 1, 1354 B Ward,<br>near Khari Corner, Mangalwar Peth,<br>Kolhapur, Maharashtra 416012</address>
         <div><div class="k">Call or WhatsApp</div><div class="num">+91 96570 93006</div></div>
         <div class="row">
@@ -586,7 +571,7 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
 
 <div class="news">
   <div class="wrap">
-    <div><span class="eyebrow">New drops, first</span><h3 style="font-size:28px;margin-top:10px">Get early access to new designs.</h3></div>
+    <div><h3 style="font-size:28px">New designs every week. Get them first.</h3></div>
     <form id="newsForm" novalidate>
       <label for="nemail" class="eyebrow" style="position:absolute;left:-9999px">Email</label>
       <input id="nemail" type="email" placeholder="Your email address" required autocomplete="email">
@@ -598,7 +583,7 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
 <footer>
   <div class="wrap">
     <div class="cols">
-      <div class="fb"><b>अलंकार</b><p>Handcrafted artificial jewellery from Kolhapur. Traditional Maharashtrian designs and modern favourites.</p></div>
+      <div class="fb"><img src="https://cdn.jsdelivr.net/gh/teamalankarfashions/website@f66508ec1764e184463a987b78db0f93007b2446/public/brand/logo-light.png" alt="अलंकार Alankar Fashions" style="height:84px;width:auto"><p>Handcrafted artificial jewellery from Kolhapur. Traditional Maharashtrian designs and modern favourites.</p></div>
       <div><h4>Shop</h4><ul><li><a href="#">Pearls</a></li><li><a href="#">Traditionals</a></li><li><a href="#">Necklace</a></li><li><a href="#">Bangles</a></li><li><a href="#">Earrings</a></li><li><a href="#">New in</a></li></ul></div>
       <div><h4>Help</h4><ul><li><a href="#">Track order</a></li><li><a href="#">My account</a></li><li><a href="#">FAQ</a></li><li><a href="#">Contact</a></li><li><a href="#">About us</a></li></ul></div>
       <div><h4>Policies</h4><ul><li><a href="#">Shipping</a></li><li><a href="#">Returns &amp; exchange</a></li><li><a href="#">Refunds</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
@@ -627,29 +612,30 @@ footer .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font-size
   </div>
 </aside>
 <aside class="drawer left" id="menu" aria-label="Menu" aria-hidden="true">
-  <div class="dh"><h3 style="font-family:var(--f-deva);color:var(--sindoor)">अलंकार</h3><button aria-label="Close menu" data-close>✕</button></div>
+  <div class="dh"><img src="https://cdn.jsdelivr.net/gh/teamalankarfashions/website@f66508ec1764e184463a987b78db0f93007b2446/public/brand/logo-red.png" alt="Alankar Fashions" style="height:44px;width:auto"><button aria-label="Close menu" data-close>✕</button></div>
   <div class="db mnav" id="mnav"></div>
 </aside>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
-const IMG = n => `https://zgivysdzzsslbdltranb.supabase.co/storage/v1/object/public/site-assets/figma/${n}.webp`;
+const IMG = (id,w=900) => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=80`;
+const PH = {trad:'1617191880362-aac615de3c26',pearl:'1654699991520-aaaf4dd2608b',neck:'1738754719555-05aca36707b1',bangle:'1758995116383-f51775896add',ear:'1648291531524-97afa1c2ac30',kundan:'1738754712726-d126c15e206b',jhumka:'1714733831162-0a6e849141be',pearl2:'1595345705177-ffe090eb0784',bangle2:'1728381031272-ba3f537feadd',mannequin:'1722410180687-b05b50922362'};
 const CATS = [
-  {slug:'traditionals',en:'Traditionals',mr:'पारंपरिक',img:'cat-traditionals',subs:[['Kolhapuri Saj','कोल्हापुरी साज'],['Thushi','ठुशी'],['Jondhale Pot','जोंधळे पोत'],['Vajratik','वज्रटीक']]},
-  {slug:'pearls',en:'Pearls',mr:'मोती',img:'cat-pearls',subs:[['Chinchpeti','चिंचपेटी'],['Tanmani','तनमणी'],['Necklace','हार']]},
-  {slug:'necklace',en:'Necklace',mr:'नेकलेस',img:'cat-necklace',subs:[['Short','शॉर्ट'],['Long','लाँग'],['Kundan','कुंदन'],['Short AD','शॉर्ट AD']]},
-  {slug:'bangles',en:'Bangles',mr:'बांगड्या',img:'cat-bangles',subs:[['Golden','सोनेरी'],['Silver','चांदी']]},
-  {slug:'earrings',en:'Earrings',mr:'कानातले',img:'cat-earrings',subs:[]}
+  {slug:'traditionals',en:'Traditionals',mr:'पारंपरिक',img:PH.trad,subs:[['Kolhapuri Saj','कोल्हापुरी साज'],['Thushi','ठुशी'],['Jondhale Pot','जोंधळे पोत'],['Vajratik','वज्रटीक']]},
+  {slug:'pearls',en:'Pearls',mr:'मोती',img:PH.pearl,subs:[['Chinchpeti','चिंचपेटी'],['Tanmani','तनमणी'],['Necklace','हार']]},
+  {slug:'necklace',en:'Necklace',mr:'नेकलेस',img:PH.neck,subs:[['Short','शॉर्ट'],['Long','लाँग'],['Kundan','कुंदन'],['Short AD','शॉर्ट AD']]},
+  {slug:'bangles',en:'Bangles',mr:'बांगड्या',img:PH.bangle,subs:[['Golden','सोनेरी'],['Silver','चांदी']]},
+  {slug:'earrings',en:'Earrings',mr:'कानातले',img:PH.ear,subs:[]}
 ];
 const PRODUCTS = [
-  {id:1,n:'Kolhapuri Saj, 21-pendant',c:'Traditionals',img:'hero-saj',p:1850,m:2400,b:'Bestseller',tags:['all']},
-  {id:2,n:'Chinchpeti & Tanmani Pearl Set',c:'Pearls',img:'cat-pearls',p:1499,m:1999,tags:['all','new']},
-  {id:3,n:'Gold-tone Thushi Choker',c:'Traditionals',img:'cat-traditionals',p:1250,m:1650,b:'Bestseller',tags:['all']},
-  {id:4,n:'Kundan Rani Set, Emerald Drop',c:'Necklace',img:'cat-necklace',p:2450,m:3200,b:'New',tags:['all','new']},
-  {id:5,n:'Filigree Bangle Stack, Set of 4',c:'Bangles',img:'cat-bangles',p:899,m:1199,tags:['all','u999']},
-  {id:6,n:'Pearl Jhumka & AD Chandelier',c:'Earrings',img:'cat-earrings',p:649,m:899,tags:['all','u999','new']},
-  {id:7,n:'Rose AD Long Necklace Set',c:'Necklace',img:'prod-ad-pink',p:1950,m:2600,b:'New',tags:['all','new']},
-  {id:8,n:'Complete Bridal Trousseau',c:'Traditionals',img:'banner-bridal',p:4999,m:6500,b:'Bridal',tags:['all']}
+  {id:1,n:'Kolhapuri Saj, 21-pendant',c:'Traditionals',img:'1601121141461-9d6647bca1ed',p:1850,m:2400,b:'Bestseller',tags:['all']},
+  {id:2,n:'Chinchpeti & Tanmani Pearl Set',c:'Pearls',img:PH.pearl2,p:1499,m:1999,tags:['all','new']},
+  {id:3,n:'Gold-tone Thushi Choker',c:'Traditionals',img:PH.bangle,p:1250,m:1650,b:'Bestseller',tags:['all']},
+  {id:4,n:'Kundan Rani Set, Emerald Drop',c:'Necklace',img:'1738754719555-05aca36707b1',p:2450,m:3200,b:'New',tags:['all','new']},
+  {id:5,n:'Ruby-stone Bangle Pair',c:'Bangles',img:PH.bangle2,p:899,m:1199,tags:['all','u999']},
+  {id:6,n:'Oxidised Pearl Jhumka',c:'Earrings',img:PH.jhumka,p:649,m:899,tags:['all','u999','new']},
+  {id:7,n:'Stone Necklace & Earring Set',c:'Necklace',img:PH.mannequin,p:1950,m:2600,b:'New',tags:['all','new']},
+  {id:8,n:'Kundan Necklace & Jhumka Set',c:'Necklace',img:PH.kundan,p:4999,m:6500,b:'Bridal',tags:['all']}
 ];
 const inr = v => '₹' + v.toLocaleString('en-IN');
 const $ = s => document.querySelector(s);
@@ -666,7 +652,7 @@ const words = ['कोल्हापुरी साज','ठुशी','चि
 $('#marq').innerHTML = [...words,...words].map(w=>`<span>${w}</span>`).join('');
 
 // instagram
-$('#ig').innerHTML = ['cat-necklace','cat-traditionals','prod-ad-pink','cat-pearls','cat-earrings','cat-bangles'].map(i=>`<a href="https://www.instagram.com/alankar_fashions_kop/" target="_blank" rel="noopener"><img src="${IMG(i)}" alt="Alankar jewellery on Instagram" loading="lazy"></a>`).join('');
+$('#ig').innerHTML = ['1673413349218-ba4de23c2958','1763017795729-e8560384df27','1628532730171-5428e3e0f0f5','1787831398033-d70495c1e8a4','1673413350047-ea5c0fd58c9e','1763578590148-fbac0711f3b2'].map(i=>`<a href="https://www.instagram.com/alankar_fashions_kop/" target="_blank" rel="noopener"><img src="${IMG(i,500)}" alt="Traditional jewellery styled on Instagram" loading="lazy"></a>`).join('');
 
 // products
 let wish = new Set(), bag = [];
