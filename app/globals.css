@@ -2,9 +2,9 @@
 :root{
   --pearl:#F8F2EE; --pearl-2:#EFE5DE; --kumkum:#5C0A12; --sindoor:#B0141E; --zari:#C29A52; --zari-soft:#E4CC9B;
   --kajal:#1E1416; --muted:#6E5E5F; --line:#E2D4CC; --ok:#2F7A4A; --warn:#A86A12; --bad:#B0141E;
-  --f-display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
-  --f-marathi:"Tiro Devanagari Marathi","Noto Serif Devanagari",serif;
-  --f-body:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-display:"Marcellus","Trajan Pro",Georgia,serif;
+  --f-marathi:"Amita","Tiro Devanagari Marathi","Noto Serif Devanagari",serif;
+  --f-body:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
   --wrap:1280px; --ease:cubic-bezier(.2,.7,.1,1);
   color-scheme:light;
 }
@@ -20,7 +20,7 @@ button{background:none;border:0;cursor:pointer}
 .eyebrow{font:600 11px/1 var(--f-body);letter-spacing:.22em;text-transform:uppercase;color:var(--zari)}
 .mr{font-family:var(--f-marathi)}
 h1,h2,h3{font-family:var(--f-display);font-weight:400;text-wrap:balance;margin:0;line-height:1.1}
-h2{font-size:clamp(28px,4vw,48px)}
+h2{font-size:clamp(26px,3.6vw,44px);letter-spacing:.005em}
 .muted{color:var(--muted)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 26px;font:600 12px/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;transition:background .3s var(--ease),color .3s,border-color .3s;border:1px solid transparent;cursor:pointer}
@@ -95,8 +95,8 @@ nav.main > div:hover .mega,nav.main > div:focus-within .mega{opacity:1;visibilit
 .hero{position:relative;background:var(--kumkum);color:var(--pearl);overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);min-height:min(78vh,700px)}
 .hero-copy{display:flex;flex-direction:column;justify-content:center;gap:24px;padding-block:72px;padding-left:max(clamp(16px,4vw,56px),calc((100vw - var(--wrap))/2 + 16px),env(safe-area-inset-left,0px));padding-right:48px;z-index:2}
-.hero .tag{font:22px/1.3 var(--f-marathi);color:var(--zari-soft)}
-.hero h1{font-size:clamp(40px,5vw,72px);letter-spacing:-.01em}
+.hero .tag{font:700 26px/1.3 var(--f-marathi);color:var(--zari-soft)}
+.hero h1{font-size:clamp(36px,4.4vw,64px);letter-spacing:0;line-height:1.12}
 .hero p.lede{max-width:44ch;color:color-mix(in srgb,var(--pearl) 82%,transparent);margin:0;font-size:17px}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
 .hero .btn-red{background:var(--pearl);color:var(--kumkum)}.hero .btn-red:hover{background:var(--zari-soft)}
@@ -132,7 +132,7 @@ nav.main > div:hover .mega,nav.main > div:focus-within .mega{opacity:1;visibilit
 .cat:hover img{transform:scale(1.06)}
 .cat::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(40,6,10,.82))}
 .cat .cap{position:absolute;z-index:2;left:22px;right:22px;bottom:20px;color:var(--pearl);display:grid;gap:4px}
-.cat .cap .mr{font-size:15px;color:var(--zari-soft)}
+.cat .cap .mr{font-size:19px;font-weight:700;color:var(--zari-soft)}
 .cat .cap h3{font-size:clamp(24px,2.6vw,34px)}
 .cat .subs{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;max-height:0;overflow:hidden;transition:max-height .5s var(--ease)}
 .cat:hover .subs,.cat:focus-visible .subs{max-height:80px}
@@ -143,7 +143,7 @@ nav.main > div:hover .mega,nav.main > div:focus-within .mega{opacity:1;visibilit
 }
 
 .marq{background:var(--kumkum);color:var(--zari-soft);overflow:hidden;padding-block:22px;white-space:nowrap}
-.marq .track{display:inline-flex;gap:48px;animation:marq 40s linear infinite;font:28px/1 var(--f-marathi)}
+.marq .track{display:inline-flex;gap:48px;animation:marq 40s linear infinite;font:700 30px/1.3 var(--f-marathi)}
 .marq .track span::after{content:"•";font-size:18px;margin-left:48px;color:var(--zari);vertical-align:middle}
 @keyframes marq{to{transform:translateX(-50%)}}
 
@@ -155,7 +155,7 @@ nav.main > div:hover .mega,nav.main > div:focus-within .mega{opacity:1;visibilit
 .glossary a{padding:18px 0;border-bottom:1px solid var(--line);display:grid;gap:2px}
 .glossary a:nth-child(odd){padding-right:18px;border-right:1px solid var(--line)}
 .glossary a:nth-child(even){padding-left:18px}
-.glossary .mr{font-size:20px;color:var(--sindoor)}.glossary small{color:var(--muted);font-size:13px}
+.glossary .mr{font-size:24px;font-weight:700;color:var(--sindoor)}.glossary small{color:var(--muted);font-size:13px}
 @media(max-width:860px){.split{grid-template-columns:1fr}}
 
 /* product grid + card */
@@ -181,7 +181,7 @@ nav.main > div:hover .mega,nav.main > div:focus-within .mega{opacity:1;visibilit
 .card .add:hover{background:var(--sindoor)}
 .card .meta{display:grid;gap:4px}
 .card .cat-n{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--zari)}
-.card h3{font:400 18px/1.25 var(--f-display)}
+.card h3{font:400 17px/1.3 var(--f-display);letter-spacing:.01em}
 .price{display:flex;gap:10px;align-items:baseline;font-variant-numeric:tabular-nums;flex-wrap:wrap}
 .price b{color:var(--sindoor);font-weight:600}
 .price s{color:var(--muted);font-size:13px}
@@ -195,7 +195,7 @@ nav.main > div:hover .mega,nav.main > div:focus-within .mega{opacity:1;visibilit
 .banner .in{position:absolute;inset:0;display:flex;align-items:center}
 .banner .box{display:grid;gap:20px;max-width:480px}
 .banner .box p{margin:0;color:color-mix(in srgb,var(--pearl) 82%,transparent)}
-.banner .mr{font-size:20px;color:var(--zari-soft)}
+.banner .mr{font-size:26px;font-weight:700;color:var(--zari-soft)}
 .banner .btn-ghost{color:var(--pearl)}
 @media(max-width:760px){.banner .ov{background:linear-gradient(0deg,rgba(40,6,10,.95) 15%,rgba(40,6,10,.3) 70%)}.banner .in{align-items:flex-end;padding-bottom:36px}}
 .occ{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
@@ -312,7 +312,7 @@ footer.site .pay span{border:1px solid rgba(255,255,255,.2);padding:4px 8px;font
 .gallery .main.zoom img{transform:scale(2)}
 .buy{display:grid;gap:18px;align-content:start}
 .buy h1{font-size:clamp(28px,3.4vw,42px)}
-.buy .mr{color:var(--muted);font-size:18px}
+.buy .mr{color:var(--muted);font-size:22px}
 .buy .price b{font-size:24px}
 .buy .note{font-size:13px;color:var(--muted)}
 .stockline{font-size:13.5px}
